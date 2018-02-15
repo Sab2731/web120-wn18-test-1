@@ -1,0 +1,32 @@
+/* styles for me tables !! */
+/* margin is for cenetr */
+
+table {
+    width:80%;
+    margin: auto;
+    border-collapse: collapse;     
+    margin-bottom: 2em;    
+    }
+
+table.client th {
+    width:25%;
+    font-weight: normal;
+    font-variant: small-caps;
+    background-color:aqua;
+}
+
+table.audience {
+    margin-top: 2em;
+    
+}
+
+table.audience th {
+    background-color: #000;
+    color: #fff;
+    
+}
+
+td,th {
+        padding : 0.5em;
+        border: 1px solid #000;      
+}

@@ -1,0 +1,81 @@
+<?php
+// form.php
+// action is where to send the form
+// we need elements for user to enter input tag
+// most important attribute
+// we want post in this case defult will be GET
+//isset is checking 
+// [] Array
+//<label> around element associated
+//required no need JS
+if(isset($_POST["FirstName"]))
+{// if data, show it
+    
+    echo $_POST["FirstName"];
+    echo $_POST["LastName"];
+    
+}else{//show form
+    
+echo'
+        <form action="" method="post" >
+    <label>
+    FirstName: <br /> 
+    <input 
+    type="text" 
+    name="FirstName" 
+    placeholder="Put First Name Here"
+    required="required"
+    tabindex="10"
+    title= "First Name is required"
+    />
+    </label>
+    <br />
+    
+    <label>
+    Last Name: <br /> 
+    <input 
+    type="text" 
+    name="LastName" 
+    placeholder="Put Last Name Here"
+    required="required"
+    tabindex="20"
+    title= "Last Name is required"
+    />
+    </label>
+    <br />
+    
+    <label>
+    Email: <br /> 
+    <input 
+    type="email" 
+    name="Email" 
+    placeholder="Put Email Here"
+    required="required"
+    tabindex="30"
+    title= "Email is required "
+    />
+    </label>
+    <br />
+    
+    <label>
+    <input ="textarea"
+    name="textarea"
+    placeholder="Put text Here"
+    <textarea rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+    </label>
+    <br />
+    
+    <input type="submit" />
+    </form>
+    '; 
+    
+}
+
+
+
+
+
+
+
